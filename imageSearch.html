@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Baidu Image Search</title>
+        <style type="text/css">
+          a:link {
+            text-decoration: none;
+            color: black;
+          }
+          a:hover {
+            text-decoration: underline;
+          }
+        </style>
+    </head>
+    <!-- <body link="black"> -->
+    <body>
+      <div class="whole">
+        <div class="header-bar-large">
+          <style>
+            .header-bar-large {
+              display: flex;
+              align-items: center;
+              padding: 10px;
+              padding-bottom: 10%;
+              margin-top: 5px;
+            }
+            .header-bar-small {
+              display: inline-block;
+              flex-grow: 1;
+              font-family: Arial, Helvetica, sans-serif;
+              text-align: right;
+            }
+          </style>
+          <div class="header-bar-small">
+            <style>
+              .image-bar {
+                display: inline-block;
+                position: relative;
+                margin-right: 10px;
+              }
+              .advanced-bar {
+                display: inline-block;
+                position: relative;
+                margin-right: 10px;
+              }
+            </style>
+            <div class="image-bar">
+              <a class="image-search" href="./index.html" target="_top">Text</a>
+            </div>
+            <div class="advanced-bar">
+              <a class="advanced-search" href="./advancedSearch.html" target="_top">Advanced</a>
+            </div>
+          </div>
+        </div>
+        <div class="baidu-icon-div">
+          <style>
+            .baidu-icon-div {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+            }
+            .icon {
+              height: 100%;
+              margin-top: auto;
+            }
+          </style>
+          <div class="icon icon-img">
+            <style>
+              .icon-img {
+                max-height: 130px;
+                position: relative;
+              }
+              .logo-img {
+                max-height: 100%;
+                max-width: 100%;
+                object-fit: contain;
+                object-position: center bottom;
+                width: auto;
+              }
+              b {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 20px;
+              }
+            </style>
+          <a href="https://www.image.baidu.com/search/index?ie=utf-8">
+            <img src="https://img1.bdstatic.com/static/common/img/baidu_image_logo_2dd9a28.png"
+              class="logo-img" alt="baidu Logo" title="baidu Search" height="70">
+            </a>
+          </div>
+        </div>
+        <div class="search-bar">
+          <style>
+            .search-bar {
+              padding: 30px;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              margin-top: auto;
+              margin-bottom: auto;
+            }
+            @media (min-width: 900px) {
+              .form-class {
+                width: 60%;
+                min-width: 820px;
+              }
+            }
+            @media (max-width: 899px) {
+              .form-class{
+                width: 100%;
+              }
+            }
+            .search-bar-input {
+              width: 80%;
+              height: 50px;
+              border: 2px solid #203bd7;
+              border-radius: 30px;
+              font-size: 16px;
+              padding-left: 30px;
+              margin-top: auto;
+              margin-bottom: auto;
+              margin-left: 9%;
+            }
+            .search-bar-button {
+              width: 20%;
+              height: 50px;
+              border: 2px solid #4865d2;
+              background-color:#4865d2;
+              border-radius: 30px;
+              font-size: 16px;
+              padding-left: 10px;
+              margin-top: auto;
+              margin-bottom: auto;
+              margin-left: -20.3%;
+            }
+          </style>
+          <form class="form-class" action="https://image.baidu.com/search/index?" method="GET" target="_top">
+            <div class="serach-form">
+              <style>
+                .serach-form {
+                  display: flex;
+                  flex-direction: row;
+                  align-items: center;
+                  margin-top: auto;
+                  width: 100%;
+                }
+                .search-bar-button {
+                  color : white;
+                }
+              </style>
+              <input type="text" name="sid" class="search-bar-input" >
+              <input type="submit" value="百度一下" class="search-bar-button">
+            </div>
+          </form>
+          <div class="footbar">
+            <style>
+              .footbar {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+              }
+            </style>
+            <p>
+             Mr Z
+          </div>
+      </div>
+    </body>
+</html>
